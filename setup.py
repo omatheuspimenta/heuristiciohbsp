@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     readme = fh.read()
 
 setup(name='heuristiciohbsp',
-    version='1.0.0',
+    version='1.0.1',
     url='https://github.com/omatheuspimenta/heuristiciohbsp',
     license='MIT License',
     author='Matheus Pimenta',

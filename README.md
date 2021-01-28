@@ -1,26 +1,26 @@
-# heuristictree
-Heuristic Methods for Minimizing Cut Bars and Using Leftovers from the One-dimensional Cutting Process - TREE Heuristic.
+# heuristiciohbsp
+Heuristic Methods for Minimizing Cut Bars and Using Leftovers from the One-dimensional Cutting Process - IOH-BSP Heuristic.
 
 ## Getting Started
 #### Dependencies
-You need Python 3.8 or later to use **heuristictree**. You can find it at [python.org](https://www.python.org/).
+You need Python 3.8 or later to use **heuristiciohbsp**. You can find it at [python.org](https://www.python.org/).
 
 #### Installation
 Clone this repo to your local machine using:
 ```
-git clone https://github.com/omatheuspimenta/heuristictree.git
+git clone https://github.com/omatheuspimenta/heuristiciohbsp.git
 ```
 or
 ```p
-pip install heuristictree
+pip install heuristiciohbsp
 ```
 
 ## Features
-In this heuristic, the losses of the cutting process are concentrated on the smallest number of bars possible, using a tree structure, in order to become losses (unusable) into leftovers (usable). 
+In this heuristic, the losses of the cutting process are concentrated on the smallest number of bars possible, using a greedy structure, in order to become losses (unusable) into leftovers (usable). 
 
 ## Example
 ```python
-from heuristictree import tree as ht
+from heuristiciohbsp import bsp
 
 n = 7
 L = 30
@@ -30,7 +30,7 @@ d = [2, 3, 2, 2, 2, 1, 1]
 left = loss = bar = 0
 x = []
 
-left,loss,bar,x = ht.tree(L=L, n=n, l=l, d=d)
+left,loss,bar,x = bsp.ioh(L=L, n=n, l=l, d=d)
 ```
 ## Input and Parameters
 * **L:** Size of bar to be cutting. _(int)_
